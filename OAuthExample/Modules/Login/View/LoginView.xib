@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="QRC-gi-WgL" customClass="LoginView" customModule="OAuthExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFL-FZ-yef">
+                    <rect key="frame" x="80" y="80" width="160" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="YDo-nX-kTW"/>
+                        <constraint firstAttribute="height" constant="30" id="ie3-yA-dEz"/>
+                    </constraints>
+                    <state key="normal" title="LogIn with Facebook">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onPressedLoginFacebook:" destination="QRC-gi-WgL" eventType="touchUpInside" id="IWZ-y9-NxK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6j-b2-gIP">
+                    <rect key="frame" x="80" y="150" width="160" height="30"/>
+                    <color key="backgroundColor" red="0.46248376026449706" green="0.56478031352183211" blue="0.72784329484248711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="4uS-Ow-vn8"/>
+                        <constraint firstAttribute="width" constant="160" id="DZT-LZ-gj1"/>
+                    </constraints>
+                    <state key="normal" title="LogIn with Twitter">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onPressedLoginTwitter:" destination="QRC-gi-WgL" eventType="touchUpInside" id="lsE-Vo-Ys5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-Xx-Cbs">
+                    <rect key="frame" x="80" y="220" width="160" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.052655856665484002" blue="0.074728360980183206" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="YPC-ph-j2q"/>
+                        <constraint firstAttribute="width" constant="160" id="pQj-Ij-4yc"/>
+                    </constraints>
+                    <state key="normal" title="LogIn with Google">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onPressedLoginGoogle:" destination="QRC-gi-WgL" eventType="touchUpInside" id="rEQ-V9-epz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5B-hS-iIJ">
+                    <rect key="frame" x="80" y="290" width="160" height="30"/>
+                    <color key="backgroundColor" red="0.21205244272818047" green="0.84356784326424872" blue="0.23227015798503553" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="INQ-X6-OCU"/>
+                        <constraint firstAttribute="width" constant="160" id="Ye8-xs-XlW"/>
+                    </constraints>
+                    <state key="normal" title="LogIn with WeChat">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onPressedLoginWeChat:" destination="QRC-gi-WgL" eventType="touchUpInside" id="rIc-Ge-Vk2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPO-Va-d3P">
+                    <rect key="frame" x="80" y="360" width="160" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Ad7-Vh-ehd"/>
+                        <constraint firstAttribute="width" constant="160" id="xhp-yN-kfI"/>
+                    </constraints>
+                    <state key="normal" title="LogIn with Weibo">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onPressedLoginWeibo:" destination="QRC-gi-WgL" eventType="touchUpInside" id="hcW-G6-ymK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tx3-sa-rdA">
+                    <rect key="frame" x="80" y="430" width="160" height="30"/>
+                    <color key="backgroundColor" red="0.39617066062176165" green="0.39617066062176165" blue="0.39617066062176165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="3Mv-Es-0gz"/>
+                        <constraint firstAttribute="height" constant="30" id="wUL-7M-Qey"/>
+                    </constraints>
+                    <state key="normal" title="LogIn with QQ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onPressedLoginQQ:" destination="QRC-gi-WgL" eventType="touchUpInside" id="4wT-qa-tKL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="M5B-hS-iIJ" firstAttribute="centerX" secondItem="QRC-gi-WgL" secondAttribute="centerX" id="76b-dQ-FHU"/>
+                <constraint firstItem="F6j-b2-gIP" firstAttribute="top" secondItem="AFL-FZ-yef" secondAttribute="bottom" constant="40" id="FiS-hi-QD2"/>
+                <constraint firstItem="cPO-Va-d3P" firstAttribute="centerX" secondItem="QRC-gi-WgL" secondAttribute="centerX" id="Kpo-Ty-MUd"/>
+                <constraint firstItem="tx3-sa-rdA" firstAttribute="centerX" secondItem="QRC-gi-WgL" secondAttribute="centerX" id="O5G-Qn-nVt"/>
+                <constraint firstItem="M5B-hS-iIJ" firstAttribute="top" secondItem="bcK-Xx-Cbs" secondAttribute="bottom" constant="40" id="XA9-sm-eDG"/>
+                <constraint firstItem="tx3-sa-rdA" firstAttribute="top" secondItem="cPO-Va-d3P" secondAttribute="bottom" constant="40" id="bXn-Mq-gPl"/>
+                <constraint firstItem="AFL-FZ-yef" firstAttribute="top" secondItem="QRC-gi-WgL" secondAttribute="top" constant="80" id="c2T-ar-ihO"/>
+                <constraint firstItem="bcK-Xx-Cbs" firstAttribute="centerX" secondItem="QRC-gi-WgL" secondAttribute="centerX" id="eyb-TK-lSg"/>
+                <constraint firstItem="cPO-Va-d3P" firstAttribute="top" secondItem="M5B-hS-iIJ" secondAttribute="bottom" constant="40" id="k60-aV-m0p"/>
+                <constraint firstItem="AFL-FZ-yef" firstAttribute="centerX" secondItem="QRC-gi-WgL" secondAttribute="centerX" id="lBy-GT-vi4"/>
+                <constraint firstItem="F6j-b2-gIP" firstAttribute="centerX" secondItem="QRC-gi-WgL" secondAttribute="centerX" id="shZ-u6-14s"/>
+                <constraint firstItem="bcK-Xx-Cbs" firstAttribute="top" secondItem="F6j-b2-gIP" secondAttribute="bottom" constant="40" id="xcN-Uj-bJl"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="239" y="-71"/>
+        </view>
+    </objects>
+</document>
