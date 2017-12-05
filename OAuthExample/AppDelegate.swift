@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import TwitterKit
+import FBSDKLoginKit
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,6 +24,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let rootVC = LoginBuilder.viewController()
         window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
+        
+        // MARK: - Google init
+        GIDSignIn.sharedInstance().clientID = AppApiServices.googleClientID
+        
+        // MARK: - Facebook init
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+        // MARK: - Twitter init
+        Twitter.sharedInstance().start(withConsumerKey:AppApiServices.twitterConsumerKey, consumerSecret:AppApiServices.twitterConsumerSecret)
+        
         return true
     }
 
@@ -47,9 +60,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        let googleHandler = GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+        let facebookHandler = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, sourceApplication: UIApplicationOpenURLOptionUniversalLinksOnly, annotation: options)
+
+        let twitterHandler = Twitter.sharedInstance().application(app, open: url, options: options)
         
-        
-        return true
+        return googleHandler || facebookHandler || twitterHandler
     }
 }
 

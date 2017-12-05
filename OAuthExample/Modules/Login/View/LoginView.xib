@@ -34,13 +34,13 @@
                     <color key="backgroundColor" red="0.46248376026449706" green="0.56478031352183211" blue="0.72784329484248711" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="4uS-Ow-vn8"/>
-                        <constraint firstAttribute="width" constant="160" id="DZT-LZ-gj1"/>
+                        <constraint firstAttribute="width" constant="160" id="geZ-QN-K4v"/>
                     </constraints>
                     <state key="normal" title="LogIn with Twitter">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="onPressedLoginTwitter:" destination="QRC-gi-WgL" eventType="touchUpInside" id="lsE-Vo-Ys5"/>
+                        <action selector="onPressedLoginTwitter:" destination="QRC-gi-WgL" eventType="touchUpInside" id="MRF-zY-PEd"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcK-Xx-Cbs">

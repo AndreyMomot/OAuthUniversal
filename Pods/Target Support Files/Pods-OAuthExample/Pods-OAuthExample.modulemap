@@ -1,0 +1,6 @@
+framework module Pods_OAuthExample {
+  umbrella header "Pods-OAuthExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

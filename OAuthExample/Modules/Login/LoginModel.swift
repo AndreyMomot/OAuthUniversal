@@ -20,14 +20,7 @@ protocol LoginModelProtocol: NSObjectProtocol {
 class LoginModel: NSObject, LoginModelProtocol {
     
     // MARK: - LoginModel methods
-
     weak public var delegate: LoginModelDelegate?
-    
-    /** Implement LoginModel methods here */
-    
-    
-    // MARK: - Private methods
-    
-    /** Implement private methods here */
+
     
 }

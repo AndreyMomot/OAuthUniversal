@@ -42,7 +42,7 @@ class LoginView: UIView, LoginViewProtocol{
     }
     
     @IBAction func onPressedLoginTwitter(_ sender: Any) {
-        self.delegate?.viewLoginTwitter(view: self)
+         self.delegate?.viewLoginTwitter(view: self)
     }
     
     @IBAction func onPressedLoginGoogle(_ sender: Any) {
